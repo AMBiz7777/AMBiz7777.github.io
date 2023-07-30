@@ -7,7 +7,7 @@
 /* Top section */
 section {
   width: 100%;
-  height: 40vh;
+  height: 20vh;
   background: #ff9900;
 }
 
@@ -22,19 +22,46 @@ section .heading {
   transform: translate(-50%, -50%);
   user-select: none;
 }
-section .para {
-  width: auto;
-  height: auto;
-  /*   background: blue; */
+/* Popup styles */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+.popup {
+  width: 250px;
+  height: 310px;
+  background: rgb(236, 236, 236);
+  border-radius: 5px;
+  border: 2px solid gray;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   font-size: 18px;
   font-style: italic;
-  padding: 10px;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 20px;
   user-select: none;
+}
+
+button#closeButton {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgb(236, 236, 236);
+  border-radius: 5px;
+  border: 2px solid gray;
+  cursor: pointer;
 }
 /* Top section */
 /* Middle section */
@@ -47,13 +74,13 @@ section .para {
 .search-box {
   width: 100%;
   height: 60px;
-  /*  background: gray; */
+  /* background: gray; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .search-box input {
-  width: 40%;
+  width: 95%;
   height: 40px;
   font-size: 17px;
   border-radius: 5px;
@@ -132,73 +159,6 @@ a {
   padding-bottom: 161px;
 }
 /* Bottom section */
-/* TOP MEDIA QUERY */
-@media (max-width: 1300px) {
-  section {
-    height: 50vh;
-  }
-  section .para {
-    top: 30%;
-  }
-}
-@media (max-width: 901px) {
-  section {
-    height: 50vh;
-  }
-  section .para {
-    top: 32%;
-  }
-}
-@media (max-width: 685px) {
-  section {
-    height: 55vh;
-  }
-  section .para {
-    top: 35%;
-  }
-}
-@media (max-width: 625px) {
-  section {
-    height: 60vh;
-  }
-  section .para {
-    top: 36%;
-  }
-}
-
-@media (max-width: 531px) {
-  section {
-    height: 65vh;
-  }
-  section .para {
-    top: 40%;
-  }
-}
-@media (max-width: 448px) {
-  section {
-    height: 73vh;
-  }
-  section .para {
-    top: 43%;
-  }
-}
-@media (max-width: 395px) {
-  section {
-    height: 76vh;
-  }
-  section .para {
-    top: 45%;
-  }
-}
-@media (max-width: 375px) {
-  section {
-    height: 80vh;
-  }
-  section .para {
-    top: 47%;
-  }
-}
-/* TOP MEDIA QUERY */
 
 /* MIDDLE MEDIA QUERY */
 @media (max-width: 1132px) {
