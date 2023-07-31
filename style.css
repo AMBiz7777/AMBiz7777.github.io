@@ -36,8 +36,8 @@ section .heading {
 }
 
 .popup {
-  width: 250px;
-  height: 310px;
+  width: auto;
+  height: auto;
   background: rgb(236, 236, 236);
   border-radius: 5px;
   border: 2px solid gray;
